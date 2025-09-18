@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="SuiteWebdemoShop">
+
+	<test name="TestRegistration" thread-count="5">
+	    <classes>
+	    	<class name="CheckoutFunction_DemoWebShop.checkoutScript"></class>
+	    </classes>
+    </test>
+</suite>
