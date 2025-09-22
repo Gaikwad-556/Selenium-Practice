@@ -212,4 +212,9 @@ public class BillingAddressCheckoutPOM {
 		WebElement first = wait.until(ExpectedConditions.visibilityOf(firstNameAssert));
 		Assert.assertEquals(first.getText(), firstName);
 	}
+	
+//	quite webdriver
+	public void quite() {
+		driver.quit();
+	}
 }

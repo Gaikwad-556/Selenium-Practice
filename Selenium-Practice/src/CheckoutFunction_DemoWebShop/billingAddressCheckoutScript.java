@@ -2,6 +2,7 @@ package CheckoutFunction_DemoWebShop;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -59,5 +60,10 @@ public class billingAddressCheckoutScript {
 		checkpom.continueClick();
 //		assert check
 		checkpom.firstNameAssertCheck(firstNameAssertCheck);
+	}
+	
+	@AfterTest
+	public void close() {
+		checkpom.quite();
 	}
 }
